@@ -1,0 +1,47 @@
+### inspired by and adapted from https://github.com/yinboc/trans-inr
+### see the TransINR license at documentation/TransINR_usage.md
+
+tokenizer:
+  input_size: 256
+  patch_size: 16
+hyponet:
+  in_dim: 2
+  hidden_dim: '256_256'
+  out_dim: 256
+  out_bias: 0.0
+  force_act: true
+  depth: 3
+  use_pe: true
+  pe_dim: 64
+  strides: '1_1_1'
+hypocnn:
+  in_dim: 256
+  hid_dim: 256
+  out_dim: 3
+  out_bias: 0.0
+  strds: '4'
+  ks: '3'
+transformer_encoder:
+  name: 'vitl_16_norm_only_rope_fixed'
+  dim: 1024
+embedding_dim: 32
+transformer_transcoder:
+  dim: -1
+transformer_decoder:
+  attention: false
+  dim: 1280
+  depth: 4
+  n_head: 16
+  head_dim: 80
+  ff_dim: 4096
+mod_idxs: '1'
+nums_patches: '256_256_256'
+
+batch_size: 64
+num_workers: 22
+lr: 3.e-4
+clip: 1.0
+max_epochs: 200
+warmup_epochs: 20
+restart_epochs: 0
+accum_iters: 1
