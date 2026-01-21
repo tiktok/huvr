@@ -1,4 +1,4 @@
-# Implicit Neural Representation Facilitates Unified Universal Vision Encoding (INRE)
+# Implicit Neural Representation Facilitates Unified Universal Vision Encoding
 
 ## News
 
