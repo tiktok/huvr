@@ -2,7 +2,7 @@
 
 ## News
 
-Paper available! <span style="color:red">link (TODO)</span>
+Paper available! <span>[arXiv](https://arxiv.org/abs/2601.14256)</span>
 
 ## Overview
 
@@ -133,7 +133,10 @@ This implementation is shared primarily as a reference to clarify the ideas pres
 If you use our paper or code in your work, please cite:
 
 ```
-@misc{gwilliam2026INRE,
-  TODO
+@article{gwilliam2026HUVR,
+  title={Accelerate High-Quality Diffusion Models with Inner Loop Feedback},
+  author={Gwilliam, Matthew and Wang, Xiao and Hu, Xuefeng and Yang, Zhenheng},
+  journal={arXiv preprint arXiv:2601.14256},
+  year={2026}
 }
 ```
