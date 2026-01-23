@@ -2,7 +2,9 @@
 
 ## News
 
-Paper available! <span>[arXiv](https://arxiv.org/abs/2601.14256)</span>
+1.23.26 - Models available! <span>[Hugging Face](https://huggingface.co/collections/tiktok/huvr)</span>
+
+1.21.26 - Paper available! <span>[arXiv](https://arxiv.org/abs/2601.14256)</span>
 
 ## Overview
 
@@ -12,7 +14,7 @@ This repository contains code and models for vision transformers that generate r
 
 Please follow the link to Hugging Face to download model weights for our open source ViT-B/16 and ViT-L/16 models.
 
-<span style="color:red">link (TODO)</span>
+<span>[Hugging Face](https://huggingface.co/collections/tiktok/huvr)</span>
 
 ## Installation
 
