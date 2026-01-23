@@ -23,6 +23,7 @@ pip install ftfy regex einops pytorch_msssim lpips
 pip install xformers==0.0.27.post2
 pip install safetensors==0.5.3
 pip install datasets
+pip install huggingface_hub
 ```
 
 ## Data Preparation
