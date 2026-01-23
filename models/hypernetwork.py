@@ -14,6 +14,7 @@ from .decoder_transformer import TransformerEncoder
 from .encoder_transformer import \
     vitb_16_norm_only_rope_fixed, \
     vitl_16_norm_only_rope_fixed
+from huggingface_hub import PyTorchModelHubMixin
 
 
 def make_distillation_layer(dim_map, potential_location, distill_dim):
@@ -47,7 +48,13 @@ def init_wb_cnn(shape):
     return torch.cat(wb_list, dim=0).detach()
 
 
-class HyperNetwork(nn.Module):
+class HyperNetwork(nn.Module, 
+                    PyTorchModelHubMixin,
+                    repo_url="https://github.com/tiktok/huvr",
+                    paper_url="https://arxiv.org/abs/2601.14256",
+                    pipeline_tag="image-feature-extraction",
+                    license="mit",
+    ):
 
     def __init__(self, tokenizer_cfg, hyponet_cfg, hypocnn_cfg, transformer_encoder_cfg, transformer_decoder_cfg, transformer_transcoder_cfg, embedding_dim,
                  mod_idxs, distill_dim=512, distill_mode='global', distill_location='transcoder', decoder_type='old',
